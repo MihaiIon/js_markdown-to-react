@@ -1,0 +1,87 @@
+// ======================================================
+// Components / Navigation
+// ======================================================
+
+.c-navigation {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: rem($navigation--height);
+
+  background-color: transparent;
+  transition: $speed $easing;
+
+  &.-shrink {
+    height: rem($navigation--height-shrinked);
+    background-color: rgba($color: $black, $alpha: 0.95);
+  }
+}
+
+.c-navigation_mobile {
+  @media screen and (max-width: $to-small) {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.c-navigation_list {
+  @media screen and (max-width: $to-small) {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    right: -99999;
+    top: 0;
+  }
+}
+
+.c-navigation_item {
+  display: inline-block;
+  &:not(:last-child) {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: transparent;
+    border-right-color: rgba($color: $white, $alpha: 0.05);
+  }
+}
+
+.c-navigation_toggle {
+  display: none;
+  @media screen and (max-width: $to-small) {
+    display: block;
+  }
+}
+
+.c-navigation_toggle_icon {
+  font-size: rem($navigation--toggle-icon-size);
+}
+
+.c-navigation_toggle,
+.c-navigation_link {
+  height: rem($navigation--height);
+  padding: 0 rem($unit / 2);
+  color: $navigation--link-color;
+  font-size: rem($navigation--font-size);
+  transition: $navigation--item-transition-speed $easing;
+
+  .c-navigation.-shrink & {
+    font-size: rem($navigation--font-size-shrinked);
+    height: rem($navigation--height-shrinked);
+  }
+}
+
+.c-navigation_toggle:hover,
+.c-navigation_link:hover,
+.c-navigation_item.-active .c-navigation_link {
+  color: $white;
+  background-color: rgba($color: $black, $alpha: 0.2);
+  .c-navigation.-shrink & {
+    background-color: rgba($color: $white, $alpha: 0.1);
+  }
+}

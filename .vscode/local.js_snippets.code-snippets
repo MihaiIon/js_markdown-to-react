@@ -1,0 +1,136 @@
+{
+  "Template | Project": {
+    "scope": "javascript",
+    "prefix": "t_project",
+    "body": [
+      "// ======================================================",
+      "// Projects / ${TM_DIRECTORY/(?:.*)\\\\(\\w+)/${1:/capitalize}/}",
+      "// ======================================================\n",
+      "import home from \"./home\";\n",
+      "export default {",
+      "\tdocumentTitle: \"${1:Title}\",",
+      "\tcopyrights: \"Copyrights © 20${2:19} - ${3:Mihai Ionescu} | ${4:mihai.t.ionescu@gmail.com}\",",
+      "\tpages: [home]",
+      "};"
+    ]
+  },
+  "Template | Project | Page": {
+    "scope": "javascript",
+    "prefix": "t_project_page",
+    "body": [
+      "// ======================================================",
+      "// Projects / ${TM_DIRECTORY/(?:.*)\\\\(\\w+)/${1:/capitalize}/} / ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}",
+      "// ======================================================\n",
+      "import {",
+      "\tcreateCode,",
+      "\tcreateCodepen,",
+      "\tcreateConstructionZone,",
+      "\tcreateGrid,",
+      "\tcreateGridRow,",
+      "\tcreateGridColumn,",
+      "\tcreateHeader,",
+      "\tcreateImage,",
+      "\tcreateList,",
+      "\tcreateNotes,",
+      "\tcreateSection,",
+      "\tcreateSeparator,",
+      "\tcreateText,",
+      "\tcreateVideo,",
+      "\tGRID_COLUMN_SIZE as COL_SIZE,",
+      "\tGRID_COLUMN_ALIGN as COL_ALIGN",
+      "} from \"../blockFactory\";\n",
+      "export default {",
+      "\ttitle: \"${1:Title}\",",
+      "\tsubtitle: \"${2:Subtitle}\",",
+      "\tbody: [createSection(\"${4:Name}\", [${0:createConstructionZone()])]",
+      "}};"
+    ]
+  },
+  "Project | Create Construction Zone": {
+    "scope": "javascript",
+    "prefix": "ccz",
+    "body": "createConstructionZone(),$0"
+  },
+  "Project | Create Code": {
+    "scope": "javascript",
+    "prefix": "cc",
+    "body": "createCode([$2], \"${1:language}\"),$0"
+  },
+  "Project | Create CodePen": {
+    "scope": "javascript",
+    "prefix": "ccp",
+    "body": [
+      "createCodepen({",
+      "\tuser: \"${1:user}\",",
+      "\thash: \"${2:hash}\",",
+      "\ttitle: \"${3:title}\", // Optional",
+      "\theight: ${4:300} // Optional",
+      "}),$0"
+    ]
+  },
+  "Project | Create Grid": {
+    "scope": "javascript",
+    "prefix": "cg",
+    "body": "createGrid([$0]),"
+  },
+  "Project | Create Grid Row": {
+    "scope": "javascript",
+    "prefix": "cgr",
+    "body": "createGridRow([$0]),"
+  },
+  "Project | Create Grid Row (header)": {
+    "scope": "javascript",
+    "prefix": "cgrh",
+    "body": "createGridRow([$0], true),"
+  },
+  "Project | Create Grid Column": {
+    "scope": "javascript",
+    "prefix": "cgc",
+    "body": "createGridColumn(\"$3\", COL_SIZE.${1:CHOOSE_SIZE}, COL_ALIGN.${2:CHOOSE_ALIGN}),$0"
+  },
+  "Project | Create Header": {
+    "scope": "javascript",
+    "prefix": "ch",
+    "body": "createHeader(\"${1:value}\"),$0"
+  },
+  "Project | Create Image": {
+    "scope": "javascript",
+    "prefix": "ci",
+    "body": "createImage(\"./assets/${1:image.jpg}\"),$0"
+  },
+  "Project | Create List (ordered)": {
+    "scope": "javascript",
+    "prefix": "clisto",
+    "body": "createList([\"$0\"], true),"
+  },
+  "Project | Create List (unordered)": {
+    "scope": "javascript",
+    "prefix": "clist",
+    "body": "createList([\"$0\"]),"
+  },
+  "Project | Create Notes": {
+    "scope": "javascript",
+    "prefix": "cn",
+    "body": "createNotes([\"$1\"]),$0"
+  },
+  "Project | Create Section": {
+    "scope": "javascript",
+    "prefix": "csec",
+    "body": "createSection(\"${1:Name}\", [$0]),"
+  },
+  "Project | Create Separator": {
+    "scope": "javascript",
+    "prefix": "csep",
+    "body": "createSeparator(${1:isSmall}),$0"
+  },
+  "Project | Create Text": {
+    "scope": "javascript",
+    "prefix": "ct",
+    "body": "createText([\"$0\"]),"
+  },
+  "Project | Create Video Player": {
+    "scope": "javascript",
+    "prefix": "cv",
+    "body": "createVideo(\"${1:url}\"),$0"
+  }
+}

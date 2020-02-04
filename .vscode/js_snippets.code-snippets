@@ -1,0 +1,297 @@
+{
+  "Base | Code Separator": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sep",
+    "body": "// ------------------------------------------------------"
+  },
+  "Base | Code Separator 2": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sep2",
+    "body": "// ======================================================"
+  },
+  "Base | Console Log": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "clog",
+    "body": "console.log($1);$0"
+  },
+  "Base | Import": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "imp",
+    "body": "import { $2 } from \"$1\";$0"
+  },
+  "Base | Import Default": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "impd",
+    "body": "import ${2:Module} from \"$1\";$0"
+  },
+  "Base | Import Classnames Helper": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "impch",
+    "body": "import ch from \"classnames-helper\";$0"
+  },
+  "Base | Import React Spring": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "imprs",
+    "body": "import ${2:Module} from \"react-spring\";$0"
+  },
+  "Base | Import React Spring - Render Props": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "imprsrp",
+    "body": "import ${2:Module} from \"react-spring/renderprops\";$0"
+  },
+
+  "Base | Export": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ex",
+    "body": "export const ${1:name} = $0;"
+  },
+  "Base | Export Default": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "exd",
+    "body": "export default $0;"
+  },
+  "Base | Export Default As": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "exda",
+    "body": "export { default as ${2:Component} } from \"$1\";$0"
+  },
+  "Base | Arrow Function": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "fn",
+    "body": "($1) => $0"
+  },
+  "Base | Arrow Function (with body)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "fnb",
+    "body": "($1) => {$0}"
+  },
+  "Base | Arrow Function (returns object)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "fno",
+    "body": "($1) => ({$0})"
+  },
+  "Base | For Loop": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "forloop",
+    "body": [
+      "for (let ${1:i} = ${2:0}; $1 < ${3:length}; $1 += 1) {",
+      "\tconst ${4:element} = ${5:array}[$1];\n}"
+    ]
+  },
+  "React | Destructure From Object": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "dfo",
+    "body": "const { $2 } = $1;$0"
+  },
+  "React | Component Proptypes": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "cpt",
+    "body": ["${1:${TM_FILENAME_BASE}}.propTypes = {$0};"]
+  },
+  "React | Component Default Props ": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "cdp",
+    "body": ["${1:${TM_FILENAME_BASE}}.defaultProps = {$0};"]
+  },
+  "propTypeArray": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pta",
+    "body": "PropTypes.array,",
+    "description": "Array prop type"
+  },
+  "propTypeArrayRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptar",
+    "body": "PropTypes.array.isRequired,",
+    "description": "Array prop type required"
+  },
+  "propTypeBool": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptb",
+    "body": "PropTypes.bool,",
+    "description": "Bool prop type"
+  },
+  "propTypeBoolRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptbr",
+    "body": "PropTypes.bool.isRequired,",
+    "description": "Bool prop type required"
+  },
+  "propTypeFunc": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptf",
+    "body": "PropTypes.func,",
+    "description": "Func prop type"
+  },
+  "propTypeFuncRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptfr",
+    "body": "PropTypes.func.isRequired,",
+    "description": "Func prop type required"
+  },
+  "propTypeNumber": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptn",
+    "body": "PropTypes.number,",
+    "description": "Number prop type"
+  },
+  "propTypeNumberRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptnr",
+    "body": "PropTypes.number.isRequired,",
+    "description": "Number prop type required"
+  },
+  "propTypeObject": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pto",
+    "body": "PropTypes.object,",
+    "description": "Object prop type"
+  },
+  "propTypeObjectRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptor",
+    "body": "PropTypes.object.isRequired,",
+    "description": "Object prop type required"
+  },
+  "propTypeString": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pts",
+    "body": "PropTypes.string,",
+    "description": "String prop type"
+  },
+  "propTypeStringRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptsr",
+    "body": "PropTypes.string.isRequired,",
+    "description": "String prop type required"
+  },
+  "propTypeNode": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptnd",
+    "body": "PropTypes.node,",
+    "description": "Anything that can be rendered: numbers, strings, elements or an array"
+  },
+  "propTypeNodeRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptndr",
+    "body": "PropTypes.node.isRequired,",
+    "description": "Anything that can be rendered: numbers, strings, elements or an array required"
+  },
+  "propTypeElement": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptel",
+    "body": "PropTypes.element,",
+    "description": "React element prop type"
+  },
+  "propTypeElementRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptelr",
+    "body": "PropTypes.element.isRequired,",
+    "description": "React element prop type required"
+  },
+  "propTypeInstanceOf": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pti",
+    "body": "PropTypes.instanceOf($0),",
+    "description": "Is an instance of a class prop type"
+  },
+  "propTypeInstanceOfRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptir",
+    "body": "PropTypes.instanceOf($0).isRequired,",
+    "description": "Is an instance of a class prop type required"
+  },
+  "propTypeEnum": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pte",
+    "body": "PropTypes.oneOf(['$0']),",
+    "description": "Prop type limited to specific values by treating it as an enum"
+  },
+  "propTypeEnumRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "pter",
+    "body": "PropTypes.oneOf(['$0']).isRequired,",
+    "description": "Prop type limited to specific values by treating it as an enum required"
+  },
+  "propTypeOneOfType": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptet",
+    "body": "PropTypes.oneOfType([\n\t$0\n]),",
+    "description": "An object that could be one of many types"
+  },
+  "propTypeOneOfTypeRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptetr",
+    "body": "PropTypes.oneOfType([\n\t$0\n]).isRequired,",
+    "description": "An object that could be one of many types required"
+  },
+  "propTypeArrayOf": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptao",
+    "body": "PropTypes.arrayOf($0),",
+    "description": "An array of a certain type"
+  },
+  "propTypeArrayOfRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptaor",
+    "body": "PropTypes.arrayOf($0).isRequired,",
+    "description": "An array of a certain type required"
+  },
+  "propTypeObjectOf": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptoo",
+    "body": "PropTypes.objectOf($0),",
+    "description": "An object with property values of a certain type"
+  },
+  "propTypeObjectOfRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptoor",
+    "body": "PropTypes.objectOf($0).isRequired,",
+    "description": "An object with property values of a certain type required"
+  },
+  "propTypeObjectOfShape": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptoos",
+    "body": "PropTypes.objectOf(PropTypes.shape($0)),",
+    "description": "An object whose keys are known ahead of time"
+  },
+  "propTypeObjectOfShapeRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptoosr",
+    "body": "PropTypes.objectOf(PropTypes.shape($0)).isRequired,",
+    "description": "An object whose keys are known ahead of time required"
+  },
+  "propTypeShape": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptsh",
+    "body": "PropTypes.shape({\n\t$0\n}),",
+    "description": "An object taking on a particular shape"
+  },
+  "propTypeShapeRequired": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ptshr",
+    "body": "PropTypes.shape({\n\t$0\n}).isRequired,",
+    "description": "An object taking on a particular shape required"
+  },
+  "Template | React Component": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "t_component",
+    "body": [
+      "import React from \"react\";",
+      "import PropTypes from \"prop-types\";\n",
+      "// Libs\n// Constants & Helpers\n// Core\n// Components\n",
+      "// ------------------------------------------------------\n",
+      "// Component's classname root",
+      "export const C_NAME = \"${3:c}-${4:${TM_FILENAME_BASE/(.*)/${1:/downcase}/}}\";\n",
+      "// Component's Function",
+      "function ${1:${TM_FILENAME_BASE}} (props) {",
+      "\treturn (",
+      "\t\t<${5:div} className={C_NAME}>",
+      "\t\t\t$0",
+      "\t\t</${5:div}>",
+      "\t);\n}\n",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {};\n",
+      "export default ${1:${TM_FILENAME_BASE}};\n"
+    ]
+  }
+}

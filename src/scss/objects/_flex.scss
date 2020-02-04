@@ -1,0 +1,25 @@
+// ==========================================================================
+// Objects / Layout
+// ==========================================================================
+
+.o-flex {
+  display: flex;
+
+  // Justify-content
+  &.-center {
+    justify-content: center;
+  }
+  &.-space-between {
+    justify-content: space-between;
+  }
+
+  // Align
+  &.-middle {
+    align-items: center;
+  }
+
+  // Direction
+  &.-column {
+    flex-direction: column;
+  }
+}

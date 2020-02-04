@@ -1,0 +1,71 @@
+// ======================================================
+// Components / Mobile-navigation
+// ======================================================
+
+.c-mobile-navigation {
+  z-index: $mobile-navigation--z-index;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: $mobile-navigation--width;
+  max-width: rem($mobile-navigation--max-width);
+  height: 100%;
+
+  background-color: $gray-darkest;
+  transform: translateX(100%);
+  transition: transform $mobile-navigation--transition-speed ease;
+
+  @media screen and (min-width: $from-small) {
+    transform: translateX(100%) !important;
+  }
+
+  &.-open {
+    transform: translateX(0%);
+  }
+}
+
+.c-mobile-navigation_header {
+  width: 100%;
+  height: rem($mobile-navigation--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-dark;
+}
+
+.c-mobile-navigation_item {
+  display: block;
+  width: 100%;
+}
+
+.c-mobile-navigation_link {
+  width: 100%;
+  padding: rem($mobile-navigation--item-v-padding) 0;
+  color: $navigation--link-color;
+  background-color: transparent;
+  transition: $navigation--item-transition-speed $easing;
+
+  &:hover,
+  .c-mobile-navigation_item.-active & {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.c-mobile-navigation_overlay {
+  position: absolute;
+  z-index: #{$mobile-navigation--z-index - 1};
+  top: 0;
+  left: 0;
+
+  display: block;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: rgba($color: $black, $alpha: 0.5);
+
+  @media screen and (min-width: $from-small) {
+    display: none;
+  }
+}

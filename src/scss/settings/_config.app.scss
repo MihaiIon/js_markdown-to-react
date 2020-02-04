@@ -1,0 +1,42 @@
+// ======================================================
+// Loading
+// ======================================================
+
+$loading--z-index: 1000;
+$loading--spinner-size: 80px;
+$loading--ring-border-width: 3px;
+
+// ======================================================
+// Mobile Navigation
+// ======================================================
+
+$mobile-navigation--z-index: 500;
+$mobile-navigation--width: 85%;
+$mobile-navigation--max-width: 360px;
+$mobile-navigation--header-height: 180px;
+$mobile-navigation--transition-speed: $speed * 2;
+$mobile-navigation--item-v-padding: $unit / 3;
+
+// ======================================================
+// Navigation
+// ======================================================
+
+$navigation--height: 80px;
+$navigation--height-shrinked: 55px;
+$navigation--toggle-icon-size: 24px;
+$navigation--item-transition-speed: $speed / 2;
+$navigation--link-color: rgba(
+  $color: $white,
+  $alpha: 0.6
+);
+$navigation--font-size: 14px;
+$navigation--font-size-shrinked: 13px;
+
+// ======================================================
+// Page
+// ======================================================
+
+$page--header-height: 560px;
+$page--content-v-padding: $unit;
+$page--title-font-size: 38px;
+$page--subtitle-font-size: 22px;

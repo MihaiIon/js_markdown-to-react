@@ -1,0 +1,52 @@
+// ======================================================
+// Components / Page
+// ======================================================
+
+.c-page {
+  position: relative;
+}
+
+.c-page_header,
+.c-page_header_overlay {
+  width: 100%;
+  height: rem($page--header-height);
+}
+
+.c-page_header {
+  position: relative;
+}
+
+.c-page_header_overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  color: $white;
+  background-color: rgba($color: $black, $alpha: 0.35);
+}
+
+.c-page_header_title {
+  margin-bottom: rem($unit / 6);
+  font-weight: $normal;
+  font-size: rem($page--title-font-size);
+}
+
+.c-page_header_subtitle {
+  font-weight: $light;
+  font-size: rem($page--subtitle-font-size);
+}
+
+.c-page_content {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: rem($page--content-v-padding);
+  padding-bottom: rem($page--content-v-padding);
+}
+
+.c-page_footer {
+  padding: $unit / 8 0;
+  text-align: center;
+  color: $gray-dark;
+  background-color: $gray-darkest;
+}
