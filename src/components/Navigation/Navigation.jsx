@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Libs
-import ch from "classnames-helper";
-
 // Components
 import NavigationItem from "./components/NavigationItem";
 import NavigationToggleBtn from "./components/NavigationToggleBtn";

@@ -1096,6 +1096,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
   integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
 
+"@types/node@^12.7.4":
+  version "12.12.26"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.26.tgz#213e153babac0ed169d44a6d919501e68f59dea9"
+  integrity sha512-UmUm94/QZvU5xLcUlNR8hA7Ac+fGpO1EG/a8bcWVz0P0LqtxFmun9Y2bbtuckwGboWJIT70DoWq1r3hb56n3DA==
+
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
@@ -2421,10 +2426,12 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames-helper@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/classnames-helper/-/classnames-helper-0.0.3.tgz#cdfd9c700f19259b491938dcc0f2c327578af5c8"
-  integrity sha512-VfhV+ZWitcD8SiowyoBHUoL+L+Vx1HeqNisTgy5iBjOQmSDy4Z2KHaIjyJCKA6OMkUpvpl+ipYrz7HlAHRLnGA==
+classnames-helper@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/classnames-helper/-/classnames-helper-1.0.2.tgz#dc0b6e2018449b58c0deecd0bb3470b4c032d1d6"
+  integrity sha512-9p1eKtGUEQJ5KLkRJ8v54dE9f0mUSP2tKJyM8Em+WcPwk2oZ4nL4UzWpewCrpr2qZG+rMZuHqUYaqUGTMaVh2w==
+  dependencies:
+    "@types/node" "^12.7.4"
 
 clean-css@4.2.x:
   version "4.2.3"

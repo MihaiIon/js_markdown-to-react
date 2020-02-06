@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 import PropTypes from "prop-types";
 
 // Libs
-import ch from "classnames-helper";
+import cn from "classnames-helper";
 
 // Components
 import MobileNavigationItem from "./components/MobileNavigationItem";
@@ -27,7 +27,7 @@ function MobileNavigation({ logoSmallPath, name, links, children }) {
   return (
     <MobileNavigationContext.Provider value={contextState}>
       {children}
-      <aside className={ch(C_NAME, ["-open", isOpen])}>
+      <aside className={cn(C_NAME, [isOpen, "-open"])}>
         <div className={`${C_NAME}_header`}>
           <img className={`${C_NAME}_logo`} src={logoSmallPath} alt={`${name} | Logo`} />
         </div>

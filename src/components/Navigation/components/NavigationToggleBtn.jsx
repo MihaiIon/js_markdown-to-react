@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import PropTypes from "prop-types";
 
 // Libs
 import { FaBars as MenuIcon } from "react-icons/fa";

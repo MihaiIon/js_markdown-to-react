@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 // Libs
 import { Transition } from "react-spring/renderprops";
-// Constants & Helpers
-// Core
+
 // Components
 import LoadingSpinner from "./components/LoadingSpinner";
 

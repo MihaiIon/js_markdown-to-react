@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // Libs
-import ch from "classnames-helper";
+import cn from "classnames-helper";
 import { Transition } from "react-spring/renderprops";
 
 // Local
@@ -23,9 +23,9 @@ function NavigationWrapper({ isShrinked, show, children }) {
       {item => props =>
         item && (
           <nav
-            className={ch(C_NAME, "o-container", "o-flex -middle -space-between", [
-              "-shrink",
-              isShrinked
+            className={cn(C_NAME, "o-container o-flex -middle -space-between", [
+              isShrinked,
+              "-shrink"
             ])}
             style={props}
           >
