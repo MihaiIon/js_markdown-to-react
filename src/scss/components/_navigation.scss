@@ -12,7 +12,7 @@
   height: rem($navigation--height);
 
   background-color: transparent;
-  transition: $speed $easing;
+  transition: height $speed $easing, background-color $speed $easing;
 
   &.-shrink {
     height: rem($navigation--height-shrinked);

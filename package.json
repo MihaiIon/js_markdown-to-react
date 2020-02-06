@@ -28,7 +28,6 @@
     "config": "^2.0.1",
     "config-webpack": "^1.0.4",
     "eslint-plugin-prettier": "^3.0.0",
-    "localStorage": "^1.0.4",
     "markdown-it": "^10.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",

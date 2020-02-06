@@ -1,6 +1,7 @@
 // ======================================================
-// Components / Page / Core / Constants
+// Constants / Spring
 // ======================================================
 
-export const FAKE_LOADING_SPEED = 1400;
-export const HEADERS_DELAY = 300;
+export const SPRING_CONFIG = {
+  SMOOTH: { tension: 200, friction: 60 }
+};
