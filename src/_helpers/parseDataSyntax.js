@@ -3,7 +3,9 @@
 // ======================================================
 
 import React from "react";
-import uniqid from "uniqid";
+// import uniqid from "uniqid";
+
+const uniqid = () => null;
 
 // Create Elements
 // ======================================================
@@ -14,7 +16,13 @@ import uniqid from "uniqid";
  * @param {*} href
  */
 const createLink = (text, href) => (
-  <a key={uniqid(text)} className="o-link" href={href} target="_blank" rel="noopener noreferrer">
+  <a
+    key={uniqid(text)}
+    className="o-link"
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     {text}
   </a>
 );

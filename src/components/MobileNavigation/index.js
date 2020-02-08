@@ -1,1 +1,1 @@
-export { default, C_NAME, MobileNavigationContext } from "./MobileNavigation";
+export { default, MobileNavigationContext } from "./MobileNavigation";

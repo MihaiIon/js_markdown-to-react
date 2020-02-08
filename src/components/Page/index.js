@@ -1,1 +1,1 @@
-export { default, C_NAME } from "./Page";
+export { default } from "./Page";

@@ -28,4 +28,5 @@ export const getFormatedLinkReference = value =>
 /**
  *
  */
-export const randomBetweenHelper = (min, max) => Math.random() * (max - min) + min;
+export const randomBetweenHelper = (min, max) =>
+  Math.random() * (max - min) + min;

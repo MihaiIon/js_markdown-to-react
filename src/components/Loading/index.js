@@ -1,1 +1,1 @@
-export { default, C_NAME } from "./Loading";
+export { default } from "./Loading";

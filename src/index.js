@@ -1,6 +1,9 @@
-import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
+
+// Polyfills
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // Styles
 import "./scss/main.scss";

@@ -83,8 +83,8 @@ build/
 public/assets/
 
 # Projects
+dist/*
 projects/*
-!projects/blockFactory.js
 !projects/demo/
 
 

@@ -19,8 +19,12 @@ export const buildData = (rawData = {}) => ({
   logoSmallPath: rawData.logoSmallPath || "MISSING_LOGO_SMALL_PATH",
   faviconPath: rawData.faviconPath || "MISSING_FAVICON_PATH",
   copyrights: rawData.copyrights || "MISSING_COPYRIGHTS",
-  primaryColor: isHexColor(rawData.primaryColor) ? rawData.primaryColor : "#ff0000",
-  accentColor: isHexColor(rawData.accentColor) ? rawData.accentColor : "#00ff00",
+  primaryColor: isHexColor(rawData.primaryColor)
+    ? rawData.primaryColor
+    : "#ff0000",
+  accentColor: isHexColor(rawData.accentColor)
+    ? rawData.accentColor
+    : "#00ff00",
   pages:
     rawData.pages && rawData.pages instanceof Array
       ? rawData.pages.map(page => ({

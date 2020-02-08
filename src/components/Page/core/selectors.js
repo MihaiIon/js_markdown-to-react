@@ -7,7 +7,8 @@
  * @param {*} data
  * @param {number} selectedPageIndex
  */
-export const getContentProps = (data, selectedPageIndex) => data.pages[selectedPageIndex];
+export const getContentProps = (data, selectedPageIndex) =>
+  data.pages[selectedPageIndex];
 
 /**
  *

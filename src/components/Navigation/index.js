@@ -1,1 +1,1 @@
-export { default, C_NAME } from "./Navigation";
+export { default } from "./Navigation";
